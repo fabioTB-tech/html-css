@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(90deg, white, rgb(250, 226, 255));
+        }
+
+        iframe {
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, odio temporibus, distinctio perspiciatis deserunt voluptate molestias omnis molestiae saepe rerum at sint. Reiciendis ex ullam nemo cupiditate nisi, cum atque!</p>
+
+    <ul>
+        <li><a href="paginas-extras/pagina001.html" target="frame">Primeira página</a></li>
+        <li><a href="paginas-extras/pagina002.html" target="frame">Segunda página</a></li>
+        <li><a href="paginas-extras/pagina003.html" target="frame">Terceira página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis aut numquam dolores atque in eligendi explicabo quasi. Consequuntur vitae vel hic mollitia. Quisquam consequuntur pariatur a, quae distinctio deserunt ex? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat aliquam fuga incidunt nostrum explicabo sunt eaque pariatur eligendi provident veniam? Ullam fugiat quaerat odio rem eum ad minus laborum ipsa!</p>
+
+    <iframe name="frame" srcdoc="<h1>Escolha uma das opções acima</h1>">
+        <p>Infelizmente seu navegador não é compatível com isso.</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus eum tempore cumque aperiam, ipsa possimus sed. Sequi nostrum tempore minus cum dolor facere aliquam quod natus, mollitia, ipsa in! Molestiae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, corrupti nemo! Saepe ipsum possimus dolorum, perferendis expedita, reiciendis fugiat natus, illo recusandae quae neque dolorem molestias commodi ullam facilis aliquam!</p>
+</body>
+</html>
