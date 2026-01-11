@@ -7,11 +7,12 @@
 }
 
 body, html {
-    background-color: lightcyan;
+    background-color: lightgrey;
 }
 
 header {
     background-color: rgb(155, 155, 155);
+    position: relative;
 }
 
 header > h1 {
@@ -19,8 +20,25 @@ header > h1 {
     text-align: center;
 }
 
-menu {
+span#burguer {
+    background-color: rgb(56, 56, 56);
+    color: white;
     display: block;
+    text-align: center;
+    padding: 5px;
+}
+
+span#burguer:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+menu {
+    position: absolute;
+    transition: 0.5s;
+    width: 100vw;
+    display: none;
 }
 
 menu > ul {
