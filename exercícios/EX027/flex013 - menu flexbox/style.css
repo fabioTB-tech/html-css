@@ -31,16 +31,20 @@ header {
     justify-content: space-between;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.39);
 
-    overflow: hidden;
+    /* overflow: hidden; */
     
     h1 {
         padding: 0 20px;
-        margin-bottom: 20px;
+        flex: 0 0 270px;
     }
     
     button {
         display: none;
     }
+}
+
+menu {
+    display: flex;
 }
 
 menu > a {

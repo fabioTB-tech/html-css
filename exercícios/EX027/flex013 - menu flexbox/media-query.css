@@ -6,46 +6,51 @@
         flex-flow: column nowrap;
         text-align: center;
         height: 93px;
-        /* height: 249px; */
-        padding: 10px 0;
-        /* animation: menu 0.5s normal ease forwards; */
+        /* height: 230px; */
+        padding: 10px 0 0 0;
+        transition: height 0.5s ease;
         
         button {
             display: inline-block;
-            background-color: #A78682;
+            background-color: #6F5060;
             width: 100%;
             border: none;
+            border-top: #51344D;
+            align-self: flex-end;
+            z-index: 1;    
+            transition: 0.2s;
         }
         
         button:hover {
-            background-color: #6F5060;
+            background-color: #A78682;
             cursor: pointer;
+        }
+
+        h1 {
+            flex: 0 0 auto;
         }
     }
 
+    header.aberto {
+        height: 249px;
+    }
+
     menu {
+        transform: translateY(19px);
         transition: 0.5s;
+        flex-flow: column nowrap;
+        align-self: flex-end;
         flex: auto;
         width: 100%;
-        display: none;
+        overflow: hidden;
+        transition: max-height 0.5s ease;
         
         .opt {
-            display: block;
             margin: 0;
             width: 100%;
             border-top: 1px solid #51344D;
             border-bottom: #51344D;
             border-radius: 0;
         }
-    }
-}
-
-@keyframes menu {
-    from {
-        height: 93px;
-    }
-
-    to {
-        height: 249px;
     }
 }
