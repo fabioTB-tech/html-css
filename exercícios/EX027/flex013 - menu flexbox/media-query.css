@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 600px) {
+    header {
+        display: flex;
+        flex-flow: column nowrap;
+        text-align: center;
+        height: 93px;
+        /* height: 249px; */
+        padding: 10px 0;
+        /* animation: menu 0.5s normal ease forwards; */
+        
+        button {
+            display: inline-block;
+            background-color: #A78682;
+            width: 100%;
+            border: none;
+        }
+        
+        button:hover {
+            background-color: #6F5060;
+            cursor: pointer;
+        }
+    }
+
+    menu {
+        transition: 0.5s;
+        flex: auto;
+        width: 100%;
+        display: none;
+        
+        .opt {
+            display: block;
+            margin: 0;
+            width: 100%;
+            border-top: 1px solid #51344D;
+            border-bottom: #51344D;
+            border-radius: 0;
+        }
+    }
+}
+
+@keyframes menu {
+    from {
+        height: 93px;
+    }
+
+    to {
+        height: 249px;
+    }
+}
