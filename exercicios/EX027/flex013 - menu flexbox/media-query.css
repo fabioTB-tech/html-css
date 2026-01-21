@@ -39,6 +39,7 @@
         transform: translateY(19px);
         transition: 0.5s;
         flex-flow: column nowrap;
+        justify-content: flex-start;
         align-self: flex-end;
         flex: auto;
         width: 100%;
