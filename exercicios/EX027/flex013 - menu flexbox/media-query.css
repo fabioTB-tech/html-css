@@ -17,7 +17,7 @@
             border: none;
             border-top: #51344D;
             align-self: flex-end;
-            z-index: 1;    
+            z-index: 2;    
             transition: 0.2s;
         }
         
@@ -43,6 +43,7 @@
         flex: auto;
         width: 100%;
         overflow: hidden;
+        z-index: 1;
         transition: max-height 0.5s ease;
         
         .opt {

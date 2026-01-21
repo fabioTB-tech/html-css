@@ -36,6 +36,7 @@ header {
     h1 {
         padding: 0 20px;
         flex: 0 0 270px;
+        text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.425);
     }
     
     button {
@@ -44,7 +45,9 @@ header {
 }
 
 menu {
+    width: 100%;
     display: flex;
+    justify-content: flex-end;
 }
 
 menu > a {
